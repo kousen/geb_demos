@@ -30,13 +30,14 @@ class TodosPage extends Page {
 
     void removeFirstToDoItem() {
         def firstToDoItem = items.first()
+        def firstDestroyLink = destroyLink.first()
 
         interact {
             moveToElement(firstToDoItem)
         }
 
-        waitFor { destroyLink.displayed }
+        waitFor { firstDestroyLink.displayed }
 
-        destroyLink.click()
+        firstDestroyLink.click()
     }
 }
