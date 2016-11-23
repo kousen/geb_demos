@@ -1,11 +1,8 @@
-import geb.driver.CachingDriverFactory
-import geb.spock.GebSpec
+package gebish
 
-class GebHomepageSpec extends GebSpec {
+import geb.spock.GebReportingSpec
 
-    def cleanup() {
-        CachingDriverFactory.clearCache()
-    }
+class GebHomePageSpec extends GebReportingSpec {
 
     def "can access The Book of Geb via homepage"() {
         when:
