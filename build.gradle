@@ -35,7 +35,7 @@ dependencies {
 // Always run the functional tests
 test.outputs.upToDateWhen { false }
 
-test.maxParallelForks = 2
+// test.maxParallelForks = 2
 
 // Pass system properties through to the test task
 configure(test) {

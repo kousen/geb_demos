@@ -1,3 +1,5 @@
+package todos
+
 import geb.Browser
 import org.openqa.selenium.Keys
 
@@ -5,7 +7,7 @@ Browser.drive {
     go 'http://todomvc.com/examples/angularjs'
 
     assert title == 'AngularJS • TodoMVC'
-    assert $("#header").find("h1").text() == 'todos'
+    assert $("#header").find("h1").text() == 'todos.todos'
 
     def todoCount = $("#todo-count")
 

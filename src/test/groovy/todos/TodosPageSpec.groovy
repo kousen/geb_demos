@@ -1,7 +1,6 @@
 package todos
 
 import geb.spock.GebReportingSpec
-import org.openqa.selenium.Keys
 
 class TodosPageSpec extends GebReportingSpec {
 
@@ -24,7 +23,7 @@ class TodosPageSpec extends GebReportingSpec {
         waitFor { page.numberOfToDoItems == old(page.numberOfToDoItems) - 1 }
     }
 
-    def 'add and delete two todos'() {
+    def 'add and delete two todos.todos'() {
         given:
         TodosPage page = to(TodosPage)
 
